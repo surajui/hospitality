@@ -1,0 +1,137 @@
+<div class="jumbotron mt-5 bgs">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <form [formGroup]="update" (ngSubmit)="submit()">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-2">
+                                <label id="pd">Patient Id:</label>
+                            </div>
+                            <div class="col-8">
+                                 <input type="text" formControlName="id" class="form-control">
+                                 <div *ngIf="!update.get('id').valid && update.get('id').touched" class="text-danger">please enter Patientid</div>
+                                </div>
+                                <div class="col-2">
+                                <button class="btn btn-info">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class=" text-danger">Update Patient</h1>
+                        <form [formGroup]="patupdate">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label id="pd">Patient ID:</label>
+                                </div>
+                                <div class="col-8">
+                                        <input type="text" formControlName="id" class="form-control"/>
+                                        <div *ngIf="submitted && f.id.errors" class="invalid-feedback">
+                                        <p *ngIf=" f.id.errors.required">ID is Compulsory</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-2">
+                                  <label id="pd">Patient Name:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" formControlName="patientname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.patientname.errors }"/>
+                                    <section *ngIf="patupdate.controls.patientname.invalid" style="color:red">
+                                    <p *ngIf="submitted &&patupdate.controls.patientname.errors.required">Name is Compulsory</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-2">
+                             <label id="pd">Email:</label>
+                                </div>
+                           
+                      <div class="col-8">
+                            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <section *ngIf="patupdate.controls.email.invalid" style="color:red">
+                            <p *ngIf="submitted &&patupdate.controls.email.errors.required">Email is Compulsory</p>
+                            </section>
+                      </div>
+                        </div></div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <div class="col-2">
+                                    <label id="pd">City:</label>
+                                 </div>
+                                 <div class="col-8">
+                                     <input type="text" formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
+                                    <section *ngIf="patupdate.controls.city.invalid" style="color:red">
+                                    <p *ngIf="submitted &&patupdate.controls.city.errors.required">City is Compulsory</p>
+                                    </section>
+                                 </div>
+                             </div>
+                        </div> 
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-2">
+                                        <label id="pd">Mobile N.O:</label>
+                                </div>
+                          
+                            <div class="col-8">
+                                    <input type="text" formControlName="mobile" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" />
+                                    <section *ngIf="patupdate.controls.mobile.invalid" style="color:red">
+                                    <p *ngIf="submitted &&patupdate.controls.mobile.errors.required">Mobile is Compulsory</p>
+                                    </section>
+                            </div>  </div>
+                        </div>
+                        <div class="form-group" >
+                            <div class="row">
+                                <div class="col-2">
+                                        <label id="pd">Gender:</label>
+                                </div>
+                           
+                        <div class="col-2">
+                                <input type="radio" formControlName="gender" name="gender" value="Male" [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">Male
+                                <input type="radio" formControlName="gender" name="gender" value="Female" [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">Female
+                                <section *ngIf="patupdate.controls.gender.invalid" style="color:red">
+                                <p *ngIf="submitted &&patupdate.controls.gender.errors.required">Gender is Compulsory</p>
+                                </section>
+                        </div> </div>
+                        </div>
+                        <div class="form-group" >
+                            <div class="row">
+                                <div class="col-2">
+                                        <label id="pd">BloodGroup:</label>
+                                </div>
+                                <div class="col-8">
+                                        <input type="text" formControlName="bgroup" class="form-control"   [ngClass]="{ 'is-invalid': submitted && f.bgroup.errors }">
+                                        <section *ngIf="patupdate.controls.bgroup.invalid" style="color:red">
+                                        <p *ngIf="submitted &&patupdate.controls.bgroup.errors.required">BloodGroup is Compulsory</p>
+                                        </section>
+                                </div>
+                            </div>
+                                </div>
+                        <div class="form-group" >
+                            <div class="row">
+                                <div class="col-2">
+                                    <label id="pd">Disease:</label>
+                                </div>
+                                <div class="col-8">
+                                        <textarea rows="4" cols="20" formControlName="Disease" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Disease.errors }">
+                                    </textarea>
+                                  <section *ngIf="patupdate.controls.Disease.invalid" style="color:red">
+                                    <p *ngIf="submitted &&patupdate.controls.Disease.errors.required">Enter Disease</p>
+                                  </section>
+                                </div>
+                            </div>
+                        </div>
+                             <button class="btn btn-info" (click)="upd()">Update</button>
+                             <button class="btn btn-danger offset-2" (click)="canl()">Cancel</button>
+                        </form>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+

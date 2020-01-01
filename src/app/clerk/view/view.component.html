@@ -1,0 +1,51 @@
+
+<div class="jumbotron mt-5 bgs">
+    <div class="container  text-center">
+        <div class="row ">
+            <div class="col-12">
+                <h1 class="text-danger">View Patient</h1>
+                 <form [formGroup]="viewpatient" (ngSubmit)="submit()">
+                     <div class="form-group">
+                         <div class="row">
+                             <div class="col-2">
+                                    <label id="pd">Patient Id:</label>
+                             </div>
+                             <div class="col-8">
+                                    <input type="text" class="form-control" formControlName="id">
+                                    <div *ngIf="!viewpatient.get('id').valid &&  viewpatient.get('id').touched" class="text-danger">Patient id required</div>
+                             </div>
+                             <div class="col-2">
+                                    <button class="btn btn-info">Submit</button>
+                             </div>
+                         </div>
+                     </div>
+                 </form>
+
+                 <div class="table-responsive mt-5">
+                        <table class="table table-bordered table-stripped" >
+                            <tr>
+                                    <th>ID</th>
+                                    <th>Patientname</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Bloodgroup</th>
+                                    <th>Mobile</th>
+                                    <th>Disease</th>
+                                    <th>City</th>
+                            </tr>
+                            <tr>
+                                <td>{{data1.id}}</td>
+                                <td>{{data1.patientname}}</td>
+                                <td>{{data1.gender}}</td>
+                                <td>{{data1.bgroup}}</td>
+                                <td>{{data1.email}}</td>
+                                <td>{{data1.city}}</td>
+                                <td>{{data1.mobile}}</td>
+                                <td>{{data1.Disease}}</td>
+                            </tr>
+                        </table>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>

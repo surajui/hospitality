@@ -1,0 +1,72 @@
+
+ <div class="container-fluid">
+    <div class="row navid ">
+        <div class="col-sm-2"></div>
+<div class="col-sm-2">
+    <img src="assets/logo.jpg" width="95px" class="rounded-circle img-fluid">
+</div>
+<div class="col-sm-6">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-3"> <p class="text-danger">Hospital</p></div>
+                <div class="col-3" id="col"><span><i class="fa fa-phone-square">helpline:8790519812</i></span></div>
+                <div class="col-3">
+                 <button class="btn btn-danger"><a routerLink="bookapp" id="book">BookAppoinment</a></button>   
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                        <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Hospital,Docters,Clinic">
+                                <div class="input-group-append">
+                                  <button class="btn btn-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                </div>
+                <div class="col-6">
+                        <a href="#" id="fc" class="pr-2"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="#" id="ft"  class="pr-2"><i class="fa fa-twitter-square fa-3x"></i> </a>
+                        <a href="#" id="fy"  class="pr-2"><i class="fa fa-youtube-play fa-3x"></i></a>
+                </div>
+            </div>
+                
+        </div>
+    </div>  
+     </div>
+<div class="col-sm-2">
+</div>
+</div>
+</div>
+<div [ngClass]="['div1','sticky-top']">
+    <div class="container">
+            <div class="row">
+                    <div class="col-8 offset-4 p-0 py-3">
+                            <nav class="navbar navbar-fill navbar-expand-md navbar-light ">
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                
+                                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                                        <div class="navbar-nav">
+                                            <a routerLink="/clerk" id="nc" class="nav-item nav-link">Clerk</a>
+                                            <a routerLink="/doctor" id="nc" class="nav-item nav-link">Doctor</a>
+                                            <a href="#" id="nc" class="nav-item nav-link active">Billing</a>
+                                            <a href="#" id="nc" class="nav-item nav-link active">Insurence Provider</a>
+                                        </div>
+                                    </div>
+                 </nav>
+             </div>
+         </div>
+    </div>
+</div>
+
+     
+           
+<!-- <router-outlet></router-outlet>  -->

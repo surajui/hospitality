@@ -1,0 +1,99 @@
+<div class="container">
+  
+    <div class="row">
+        <div class="col-12 text-danger mt-4">
+            
+            <main class="jumbotron">
+                    <h1 class="text-center">Find Doctor</h1>
+                <form [formGroup]="book">
+                    <div class="row">
+                    <div class="col-6">
+                   <div class="form-group">
+                       <input type="text" class="form-control" formControlName="book" placeholder="Search Doctor">
+                   </div>
+                </div>
+                <div class="col-6">
+                        <div class="form-group">
+                            <select class="form-control" fromControlName="option" (change)="setvalue($event)">
+                                <option value="">--Select--</option>
+                                <option value="card">Cardiology</option>
+                                <option value="criti">Critical Care</option>
+                                <option value="gas">Gastroenterology</option>
+                                <option value="radio">Radiology</option>
+                                <option value="uro">Urology</option>
+                            
+                            </select>
+                        </div>
+                     </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+            <div [ngSwitch]="bookapp">
+                <div *ngSwitchCase="'card'">
+                        <main class="container">
+                                <div class="row">
+                                        <h4>{{erMsg}}</h4>
+                                    <div class="col-6" *ngFor="let s of result1" >
+                                          <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                <h5 class="mt-5">{{s.name}}</h5>
+                                                <p>{{s.detail}}</p>
+                                                <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                            </div>
+                                            <div class="col-6" *ngFor="let s of result1" >
+                                                 <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                       <h5 class="mt-5">{{s.name}}</h5>
+                                                       <p>{{s.detail}}</p>
+                                                       <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                                   </div>
+                                </div>
+                                                   </main>
+                </div>
+                <p *ngSwitchCase="'criti'">Critical Care is work</p>
+                <p *ngSwitchCase="'gas'">Gastroenterology is work</p>
+                <p *ngSwitchCase="'radio'">Radiology is work</p>
+                <div *ngSwitchCase="'uro'">No result</div>
+                <div *ngSwitchDefault>
+                        <main class="container">
+                                <div class="row">
+                                    <div class="col-6" *ngFor="let s of result" >
+                                          <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                <h5 class="mt-5">{{s.name}}</h5>
+                                                <p >{{s.detail}}</p>
+                                                <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                            </div>
+                                            <div class="col-6" *ngFor="let s of result" >
+                                                 <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                       <h5 class="mt-5">{{s.name}}</h5>
+                                                       <p>{{s.detail}}</p>
+                                                       <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                                   </div>
+                                                   <div class="col-6" *ngFor="let s of result" >
+                                                         <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                               <h5 class="mt-5">{{s.name}}</h5>
+                                                               <p>{{s.detail}}</p>
+                                                               <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                                           </div>
+                                                           <div class="col-6" *ngFor="let s of result" >
+                                                                 <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                                       <h5 class="mt-5">{{s.name}}</h5>
+                                                                       <p>{{s.detail}}</p>
+                                                                       <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                                                   </div>
+                                                                   <div class="col-6" *ngFor="let s of result" >
+                                                                         <img src="{{s.pic}}" width="200px" class="image-fluid mb-5">
+                                                                               <h5 class="mt-5">{{s.name}}</h5>
+                                                                               <p>{{s.detail}}</p>
+                                                                               <span><a href="#" id="ad">view profile</a><button class="btn btn-danger ml-2">Book Appointment</button></span>
+                                        </div>
+                                               </div> 
+                             </main>
+                             
+
+                </div>
+            </div>
+           
+          
+            </div>
+        </div>
+   

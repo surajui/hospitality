@@ -1,0 +1,47 @@
+<div class="jumbotron mt-5 bgs">
+<div class="container">
+    <div class="row">
+        <div class="col-10 text-center">
+            <h2 class="text-success">Patient view</h2>
+            <form [formGroup]="patient" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-2">
+                              <label for="firstName">PatientId:</label>
+                            </div>
+                            <div class="col-8">
+                             <input type="text" formControlName="id" name="Name" class="form-control" >
+                             <div *ngIf="!patient.get('id').valid && patient.get('id').touched" class="text-danger">please enter Patientid</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <button class="btn btn-primary" >Submit</button>
+              </form>
+          </div>
+        </div>
+    </div>
+    <div class="table-responsive mt-5">
+            <table class="table table-bordered table-stripped" >
+                <tr>
+                        <th>ID</th>
+                        <th>Patientname</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Bloodgroup</th>
+                        <th>Mobile</th>
+                        <th>Disease</th>
+                </tr>
+                <tr>
+                    <td>{{data1.id}}</td>
+                    <td>{{data1.pname}}</td>
+                    <td>{{data1.gender}}</td>
+                    <td>{{data1.age}}</td>
+                    <td>{{data1.bgroup}}</td>
+                    <td>{{data1.mobile}}</td>
+                    <td>{{data1.disease}}</td>
+                </tr>
+            </table>
+            </div>
+</div>
+
+

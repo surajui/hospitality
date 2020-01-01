@@ -1,0 +1,50 @@
+{
+    "critical": [
+      {
+       "pic":"assets/critical.jpg",
+       "name":"Dr.Suraj",
+       "detail":"MBBS,MS,MCH"
+      },
+      {
+        "pic":"assets/n2.jpg",
+        "name":"Dr.Neelima",
+        "detail":"MBBS,MS,MCH"
+       }
+    ],
+    "cardiolo": [
+        {
+         "pic":"assets/radio.jpg",
+         "name":"Dr.Ranveer",
+         "detail":"MBBS,MS,MCH"
+        },
+        {
+          "pic":"assets/radio.jpg",
+          "name":"Dr.Govind",
+          "detail":"MBBS,MS,MCH"
+         }
+      ],
+      "gastro": [
+        {
+         "pic":"assets/gastro.jpg",
+         "name":"Dr.Varsha",
+         "detail":"MBBS,MS,MCH"
+        },
+        {
+          "pic":"assets/gastro.jpg",
+          "name":"Dr.Shirisha",
+          "detail":"MBBS,MS,MCH"
+         }
+      ],
+      "radio": [
+        {
+         "pic":"assets/radio.jpg",
+         "name":"Dr.Akram",
+         "detail":"MBBS,MS,MCH"
+        },
+        {
+          "pic":"assets/radio.jpg",
+          "name":"Dr.Prasana",
+          "detail":"MBBS,MS,MCH"
+         }
+      ]
+}

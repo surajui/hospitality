@@ -1,0 +1,40 @@
+<div class="jumbotron mt-5 bgs">
+<div class="container ">
+    <div class="row">
+        <div class="col-12">
+                <h2 class="text-success text-center">Patient Information</h2>
+                <div class="table-responsive">
+                <table class="table  table-bordered">
+                        <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Patientname</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Bloodgroup</th>
+                    <th>Mobile</th>
+                    <th>Disease</th>
+                    <th>Deprtid</th>
+                    <th>Docid</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                        <tr *ngFor="let s of users">
+                                <td>{{s.id}}</td>
+                                <td>{{s.pname}}</td>
+                                <td>{{s.gender}}</td>
+                                <td>{{s.age}}</td>
+                                <td>{{s.bgroup}}</td>
+                                <td>{{s.mobile}}</td>
+                                <td>{{s.disease}}</td>
+                                <td>{{s.dpid}}</td>
+                                <td>{{s.docid}}</td>
+                             </tr>
+                  </tbody>
+              </table>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+

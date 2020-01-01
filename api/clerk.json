@@ -1,0 +1,124 @@
+{
+  "clerk": [
+    {
+      "id": "1",
+      "patientname": "",
+      "gender": "",
+      "bgroup": "",
+      "email": "",
+      "city": "",
+      "mobile": "",
+      "Disease": ""
+    },
+    {
+      "id": "2",
+      "patientname": "sdfas",
+      "gender": "Female",
+      "bgroup": "sadfa",
+      "email": "sadfasf",
+      "city": "sadfdas",
+      "mobile": "1234567890",
+      "Disease": "sadfsadfas"
+    },
+    {
+      "id": "3",
+      "patientname": "sadfsa",
+      "gender": "Female",
+      "bgroup": "dfgfdsg",
+      "email": "sdfdsaf@sgdfs",
+      "city": "dfgdsfg",
+      "mobile": "dfgdsfg",
+      "Disease": "dfgfdsgs"
+    },
+    {
+      "id": "4",
+      "patientname": "sdgsd",
+      "gender": "Female",
+      "bgroup": "fgsdgs",
+      "email": "sdfgsd@gsfdg",
+      "city": "dfgsdg",
+      "mobile": "1234567890",
+      "Disease": "dfgfsdgsd"
+    },
+    {
+      "id": "5",
+      "patientname": "sdgsdfgd",
+      "gender": "Female",
+      "bgroup": "fgsdgs",
+      "email": "sdfgsd@gsfdg",
+      "city": "dfgsdg",
+      "mobile": "1234567890",
+      "Disease": "dfgfsdgsd"
+    },
+    {
+      "id": "6",
+      "patientname": "dsfgsd",
+      "gender": "Male",
+      "bgroup": "sadfasd",
+      "email": "dsfgsd@fgsfdg",
+      "city": "dfgsd",
+      "mobile": "0123456789",
+      "Disease": "asdfasfaf"
+    },
+    {
+      "id": "7",
+      "patientname": "sdfgsd",
+      "gender": "Male",
+      "bgroup": "fghj",
+      "email": "sdfgsd@dgsdg",
+      "city": "dfgsdg",
+      "mobile": "0123456789",
+      "Disease": "gfhjfgj"
+    },
+    {
+      "id": "8",
+      "patientname": "dsfg",
+      "gender": "Male",
+      "bgroup": "dfgsd",
+      "email": "dfgsd@sdfg",
+      "city": "dfgsdf",
+      "mobile": "dsfgsfdfg",
+      "Disease": "sdfgsdg"
+    },
+    {
+      "id": "9",
+      "patientname": "dfghdf",
+      "gender": "Male",
+      "bgroup": "dfgsd",
+      "email": "dfghdfh@gs",
+      "city": "sfdgsd",
+      "mobile": "1234567890",
+      "Disease": "dsfgsfdfg"
+    },
+    {
+      "id": "10",
+      "patientname": "RaviKiran",
+      "gender": "Male",
+      "bgroup": "B+ve",
+      "email": "ravikiran@gmail.com",
+      "city": "Hydrebad",
+      "mobile": "8008692302",
+      "Disease": "ssdfklas"
+    },
+    {
+      "id": "11",
+      "patientname": "suraj",
+      "gender": "Male",
+      "bgroup": "ove+",
+      "email": "surajsable@gmail.com",
+      "city": "adilabad",
+      "mobile": "8790519812",
+      "Disease": "afdasfa"
+    },
+    {
+      "id": "13",
+      "patientname": "vinai",
+      "gender": "Male",
+      "bgroup": "ove+",
+      "email": "vinai@gmail.com",
+      "city": "karimnagar",
+      "mobile": "1234567890",
+      "Disease": "ahfdashf"
+    }
+  ]
+}
